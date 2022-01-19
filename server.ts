@@ -6,8 +6,4 @@ app.get('/hello', (req: express.Request, res: express.Response) =>
 
 const PORT = 4000;
 
-app.listen(process.env.PORT || PORT, () => {
-    console.log(`server started`)
-});
-  
-// app.listen(PORT);
+app.listen(PORT);
