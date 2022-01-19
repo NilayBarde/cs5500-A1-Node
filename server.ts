@@ -1,7 +1,7 @@
 import express from 'express';
 const app = express();
 
-app.get('/hello', (req, res) =>
+app.get('/hello', (req: express.Request, res: express.Response) =>
     res.send('Hello World!'));
 
 const PORT = 4000;
