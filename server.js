@@ -3,6 +3,8 @@ const app = express();
 
 const mongoose = require("mongoose");
 mongoose.connect("mongodb://0.0.0.0:27017/movie-db");
+const bodyParser = require("body-parser");
+app.use(bodyParser.json());
 
 app.get("/hello", (req, res) => res.send("Hello World!"));
 

@@ -1,12 +1,13 @@
 import express from "express";
 import UserController from "./controllers/UserController";
 import UserDao from "./daos/UserDao";
-
 import mongoose from "mongoose";
 
-mongoose.connect("mongodb://0.0.0.0:27017/tuiter");
-
 const app = express();
+mongoose.connect("mongodb://0.0.0.0:27017/tuiter");
+const bodyParser = require("body-parser");
+
+app.use(bodyParser.json());
 
 app.get("/hello", (req, res) => res.send("Hello World!"));
 
