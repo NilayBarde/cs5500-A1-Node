@@ -22,7 +22,7 @@ const UserSchema = new mongoose.Schema(
         biography: String,
         dateOfBirth: Date,
         joined: { type: Date, default: Date.now },
-        location: Location,
+        location: "",
     },
     { collection: "users" }
 );
