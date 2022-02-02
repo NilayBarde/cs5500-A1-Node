@@ -1,3 +1,3 @@
 export default class Topic {
-   private tag: string = '';
+    private tag: string = "";
 }
