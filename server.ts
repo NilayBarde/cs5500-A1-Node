@@ -1,6 +1,8 @@
 import express from "express";
 import UserController from "./controllers/UserController";
+import TuitController from "./controllers/TuitController";
 import UserDao from "./daos/UserDao";
+import TuitDao from "./daos/TuitDao";
 import mongoose from "mongoose";
 
 const app = express();
@@ -16,7 +18,9 @@ app.get("/add/:a/:b", (req, res) => {
 });
 
 let userDao = new UserDao();
+let tuitDao = new TuitDao();
 let userController = new UserController(app, userDao);
+let tuitController = new TuitController(app, tuitDao);
 
 const PORT = 4000;
 app.listen(process.env.PORT || PORT);
