@@ -7,7 +7,7 @@ import mongoose from "mongoose";
 
 const app = express();
 mongoose.connect(
-    "mongodb+srv://nilaybarde:<password>@cluster0.jarvx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+    "mongodb+srv://nilaybarde:oPpleA9vA3IPwAlE@cluster0.jarvx.mongodb.net/cs5500-a1-db?retryWrites=true&w=majority"
 );
 const bodyParser = require("body-parser");
 
