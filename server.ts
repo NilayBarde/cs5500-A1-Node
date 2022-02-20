@@ -6,7 +6,9 @@ import TuitDao from "./daos/TuitDao";
 import mongoose from "mongoose";
 
 const app = express();
-mongoose.connect("mongodb://0.0.0.0:27017/tuiter");
+mongoose.connect(
+    "mongodb+srv://nilaybarde:<password>@cluster0.jarvx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+);
 const bodyParser = require("body-parser");
 
 app.use(bodyParser.json());
